@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Suwarna Education</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            text-align: center; /* Menambahkan centering pada header */
+            padding: 2rem 1rem;
+        }
+
+        main {
+            padding: 1rem 2rem;
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center; /* Menambahkan centering pada setiap section */
+        }
+
+        section h2 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 1 1 calc(33.333% - 1rem);
+            background-color: #e0e7ff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            min-width: 250px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #1e3a8a;
+        }
+
+        blockquote {
+            border-left: 5px solid #1e3a8a;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            background-color: #f0f4ff;
+        }
+
+        .center-image {
+            text-align: center;
+        }
+
+        .center-image img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: left; 
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            border-top: 5px solid #4f46e5;
+        }
+
+        #testimoni {
+            margin-top: 2rem;
+        }
+
+        .testimoni-item {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            justify-content: center;
+        }
+
+        .testimoni-image img {
+            width: 150px; 
+            height: 220px; 
+            object-fit: cover; 
+            margin-right: 1rem;
+        }
+
+        .testimoni-text blockquote {
+            max-width: 600px;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%;
+            }
+
+            .testimoni-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .testimoni-image img {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suwarna Education</h1>
+        <p>Membangun Masa Depan Emas Pendidikan Indonesia</p>
+    </header>
+
+    <main>
+
+        <!-- Cover -->
+        <section id="cover">
+            <h2>Selamat Datang di Suwarna Education</h2>
+            <p>Membentuk generasi cemerlang untuk masa depan gemilang.</p>
+        </section>
+
+        <!-- Brosur -->
+        <section id="brosur">
+            <h2>Brosur Program</h2>
+            <div class="center-image">
+                <img src="brosur1.jpeg" alt="Brosur Suwarna Education">
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about-us">
+            <h2>Tentang Kami</h2>
+            <p>Swarna Education merupakan lembaga bimbingan belajar yang berdiri sejak awal tahun 2007 yang  beralamat di Jl. Raya Wonokromo, Surabaya. Kemudian pindah ke Jl. Waru Menanggal. Kemudian pada tahun 2011 pindah lagi ke Jl. Delta Sari, Waru Sidoarjo sampai sekarang.</p>
+        </section>
+
+        <!-- Paket Program -->
+        <section id="paket">
+            <h2>Paket Program</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Program SD</h3>
+                    <p>Dasar-dasar belajar menyenangkan untuk siswa sekolah dasar.</p>
+                </div>
+                <div class="card">
+                    <h3>Program SMP</h3>
+                    <p>Pembelajaran intensif dan adaptif untuk siswa SMP.</p>
+                </div>
+                <div class="card">
+                    <h3>Program SMA</h3>
+                    <p>Persiapan akademik menyeluruh untuk siswa tingkat SMA.</p>
+                </div>
+                <div class="card">
+                    <h3>Intensif UTBK</h3>
+                    <p>Fokus persiapan UTBK dengan soal dan simulasi real-time.</p>
+                </div>
+                <div class="card">
+                    <h3>Program Lainnya</h3>
+                    <p>Kelas bahasa, pelatihan softskill, dan kursus minat khusus.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni -->
+        <section id="testimoni">
+            <h2>Testimoni Unggulan</h2>
+            <div class="testimoni-item">
+                <div class="testimoni-image">
+                    <img src="Testimoni 1.jpeg" alt="Hasby Ibrahim Yusuf">
+                </div>
+                <div class="testimoni-text">
+                    <blockquote>
+                        <p>"Alhamdulillah sangat bersyukur bisa ikut les di LBB SE hingga aku bisa lolos di PTN impianku.
+                            Tentor tentor yang mengajar asik dan materi yang disampaikan mudah dipahami. 
+                            Sangat banyak ilmu yang saya dapatkan.
+                            Modul pembelajarannya bagus, sangat membantu dalam mempersiapkan UTBK."</p>
+                        <footer>Hasby Ibrahim Yusuf - Industri, ITS</footer>
+                    </blockquote>
+                </div>
+            </div>
+            
+            <div class="testimoni-item">
+                <div class="testimoni-image">
+                    <img src="Testimoni 2.jpeg" alt="Siti Aisyah">
+                </div>
+                <div class="testimoni-text">
+                    <blockquote>
+                        <p>"Seruu banget belajar di SE. Tentornya keren-keren dan ngebahas soal dgn jelas, bisa tanya-tanya soal juga. Terus materi yg dikasih juga TOP lah, banyak yg keluar juga, juga ada pembahasan soal. Suasananya enak banget apalagi banyak temennya jadi belajar juga diselingi seru-seruan dikit sama temen-teman."</p>
+                        <footer>Siti Aisyah - Kedokteran, UNAIR</footer>
+                    </blockquote>
+                </div>
+            </div>
+        
+            <div class="testimoni-item">
+                <div class="testimoni-image">
+                    <img src="Testimoni 3.jpeg" alt="Sheva Ali Husein">
+                </div>
+                <div class="testimoni-text">
+                    <blockquote>
+                        <p>"Bagi saya LBB SE adalah pilihan terbaik yang pernah saya buat. berkat bimbingannya, alhamdulillah saya berhasil masuk ke sekolah kedinasan impian saya. Saya sangat bahagia bisa les di sini, semua tentornya ramah, metode pengajaran sangat efektif dan penuh dengan kesabaran. Saya belajar banyak disini dan memiliki teman-teman yang baik, ramah dan saling membantu. Saya sangat merekomendasikan LBB SE untuk siapapun yang ingin sukses dalam pendidikan. Terima kasih LBB SE dan para tentor yang telah memberi ilmu yang bermanfaat sehingga saya bisa diterima di PPI MADIUN"</p>
+                        <footer>Sheva Ali Husein - Kedinasan PPI, Madiun</footer>
+                    </blockquote>
+                </div>
+            </div>
+            
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact-us">
+        <h2>CONTACT US</h2>
+        <p>Email:<a href="suwarnaeducation1@gmail.com"> suwarnaeducation1@gmail.com</a></p>
+        <p>Telepon: 0856-3129-756</p>
+        <p>Alamat: Delta Sari Indah Blok H No. 5, Waru, Sidoarjo </p>
+        <p>&copy; 2025 Suwarna Education</p>
+    </footer>
+
+</body>
+</html>
+
+
